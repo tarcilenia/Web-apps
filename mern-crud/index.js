@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const routes = require('./routes')
 
 mongoose
-  .connect('mongodb://localhost:27017/mern_crud', { useNewUrlParser: true })
+  .connect('mongodb://127.0.0.1:27017/mern_crud', { useNewUrlParser: true })
   .then(() => {
     const app = express()
     app.use(express.json())
